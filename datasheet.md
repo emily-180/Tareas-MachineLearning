@@ -44,8 +44,14 @@ Salida:
 print("Suma:", a + 40)
 print("Multiplicación:", a * 5)
 print("Elemento a elemento:", a * np.array([10,50,100,150]))
+print("Primeros 3 elementos:", a[:3])
+print("Elementos del 2 al 4:", a[1:4])
+print("Últimos 2 elementos:", a[-2:])
 ```
 Salida:
 Suma: [41 42 43 44]
 Multiplicación: [ 5 10 15 20]
 Elemento a elemento: [ 10 100 300 600]
+Primeros 3 elementos: [1 2 3]
+Elementos del 2 al 4: [2 3 4]
+Últimos 2 elementos: [3 4]
