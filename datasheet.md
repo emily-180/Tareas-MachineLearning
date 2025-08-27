@@ -95,6 +95,14 @@ Random: [[0.44493135 0.94098532]
  [0.6792999  0.02241597]]
 
 ```python
-
+# algebra lineal
+A = np.array([[1,2],[3,4]])
+B = np.array([[5,6],[7,8]])
+print("Producto punto:", np.dot(A,B))
+print("Inversa:", np.linalg.inv(A))
 ```
-
+Salida:
+Producto punto: [[19 22]
+ [43 50]]
+Inversa: [[-2.   1. ]
+ [ 1.5 -0.5]]
