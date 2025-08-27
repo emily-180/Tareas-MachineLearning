@@ -55,7 +55,6 @@ Elemento a elemento: [ 10 100 300 600]
 Primeros 3 elementos: [1 2 3]
 Elementos del 2 al 4: [2 3 4]
 Últimos 2 elementos: [3 4]
-=======
 
 ### NumPy – Operaciones estadísticas y funciones avanzadas
 ```python
