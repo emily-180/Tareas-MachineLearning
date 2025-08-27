@@ -55,3 +55,61 @@ Elemento a elemento: [ 10 100 300 600]
 Primeros 3 elementos: [1 2 3]
 Elementos del 2 al 4: [2 3 4]
 Últimos 2 elementos: [3 4]
+=======
+
+### NumPy – Operaciones estadísticas y funciones avanzadas
+```python
+array = np.random.randint(1, 100, size=10)
+print("Array:", array)
+```
+Salida:
+Array: [26 71 68  7 84 17 14 45 18 65]
+
+```python
+print("Media:", np.mean(array))
+```
+Salida:
+Media: 41.5
+
+```python
+print("Desviación estándar:", np.std(array))
+```
+Salida:
+Desviación estándar: 26.98610753702727
+
+```python
+print("Suma:", np.sum(array))
+```
+Salida:
+Suma: 415
+
+```python
+#valores igualmente espaciados
+print("arange:", np.arange(0, 10, 2))
+print("linspace:", np.linspace(0, 1, 5))
+```
+Salida:
+arange: [0 2 4 6 8]
+linspace: [0.   0.25 0.5  0.75 1.  ]
+
+```python
+#aleatorio
+print("Random:", np.random.rand(3,2))
+```
+Salida:
+Random: [[0.44493135 0.94098532]
+ [0.71137975 0.84216688]
+ [0.6792999  0.02241597]]
+
+```python
+# algebra lineal
+A = np.array([[1,2],[3,4]])
+B = np.array([[5,6],[7,8]])
+print("Producto punto:", np.dot(A,B))
+print("Inversa:", np.linalg.inv(A))
+```
+Salida:
+Producto punto: [[19 22]
+ [43 50]]
+Inversa: [[-2.   1. ]
+ [ 1.5 -0.5]]
