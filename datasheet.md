@@ -112,3 +112,40 @@ Producto punto: [[19 22]
  [43 50]]
 Inversa: [[-2.   1. ]
  [ 1.5 -0.5]]
+
+```python
+# Series
+s = pd.Series([10, 20, 30], index=["a", "b", "c"])
+print(s)
+```
+salida:
+a    10
+b    20
+c    30
+dtype: int64
+
+```python
+# DataFrame
+data = {"Nombre": ["Emily", "Carol", "María"],
+        "Edad": [22, 20, 30],
+        "Ciudad": ["Bogotá", "Chía", "Cali"]}
+df = pd.DataFrame(data)
+print(df)
+```
+salida:
+Nombre  Edad  Ciudad
+0  Emily    22  Bogotá
+1  Carol    20    Chía
+2  María    30    Cali
+
+```python
+# Seleccionar columnas
+print(df["Nombre"])
+```
+salida
+0    Emily
+1    Carol
+2    María
+Name: Nombre, dtype: object
+
+
