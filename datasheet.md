@@ -181,3 +181,36 @@ salida:
 3    Carlos  Belo Horizonte            MG    Brasil  Administração     35
 4  Fernanda        Medellín  Cundinamarca  Colômbia       Sistemas     25
 
+### Pandas – Operaciones avanzadas con DataFrames
+```python
+# Filtros
+print(df[df["Edad"] > 22])
+```
+salida:
+Nombre  Edad Ciudad
+2  María    30   Cali
+
+```python
+# GroupBy
+print(df.groupby("Ciudad")["Edad"].mean())
+```
+salida:
+Ciudad
+Bogotá    22.0
+Cali      30.0
+Chía      20.0
+Name: Edad, dtype: float64
+
+```python
+# join
+df_extra = pd.DataFrame({"Ciudad": ["Bogotá","Cali"],
+                         "Poblacion": [8000000, 2200000]})
+df_merged = pd.merge(df, df_extra, on="Ciudad", how="left")
+print(df_merged)
+```
+
+salida:
+ Nombre  Edad  Ciudad  Poblacion
+0  Emily    22  Bogotá  8000000.0
+1  Carol    20    Chía        NaN
+2  María    30    Cali  2200000.0
