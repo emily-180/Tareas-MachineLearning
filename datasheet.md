@@ -214,3 +214,21 @@ salida:
 0  Emily    22  Bogotá  8000000.0
 1  Carol    20    Chía        NaN
 2  María    30    Cali  2200000.0
+
+```python
+# Manejo de valores nulos
+df_merged["Poblacion"] = df_merged["Poblacion"].fillna(0
+```
+```python
+# Eliminar filas con valores nulos (dropna)
+print(df_merged.dropna())
+```
+salida:
+Nombre  Edad  Ciudad  Poblacion
+0  Emily    22  Bogotá  8000000.0
+2  María    30    Cali  2200000.0
+
+```python
+# Exportar / Importar
+df.to_csv("output.csv", index=False)
+```
